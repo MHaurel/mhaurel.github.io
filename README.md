@@ -1,3 +1,3 @@
 # mhaurel.github.io
 
-<img href="./dream.gif">
+<img style="width:50%; height:50%;" href="./dream.gif">
