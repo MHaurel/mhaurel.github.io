@@ -1,5 +1,3 @@
 # mhaurel.github.io
 
-```{image} ./dream.gif
-:align: center
-```
+<img href="./dream1.gif">
