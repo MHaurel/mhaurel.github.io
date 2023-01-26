@@ -1,12 +1,37 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Maxime Haurel"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+Hello ! I'm Maxime HAUREL, a french 1st year Cognitive Sciences master's degree student specialized in AI. Since September 2022, I am an AI and software developer apprentice.
+
+I feel really passionated by Artificial Intelligence, especially Reinforcement Learning and this is why I make side projects to acquire more knowledge. Also, I like to read about academic research and science in general.
+
+I did an internship in LORIA Nancy, France in 2022 in which I had the chance to work on concepts-based interpretability in neural networks.
+I would like to pursue in research as a doctorant in the field of AI from September 2024.
+
+Other
+=====
+
+
+
+Hi ! I'm Maxime and I am currently enrolled in a Cognitive Sciences master's degree specialized in Computer Science and Artificial Intelligence.
+
+Since September 2022 I am an AI and software developer in the company T.E.A. in Nancy, France.
+
+I feel really passionated by Artificial Intelligence, that is why I make side projects to acquire more knowledge with time.
+
+I did an internship in LORIA Nancy, France in the 2022 summer in which I had the chance to work with talented researchers.
+
+In parallel of my studies, I like to read about science in general but especially about astronomy.
+
+In the future, I would like to pursue in research as a doctorant in the fields of AI/computational neuroscience from September 2024.
+
 
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
