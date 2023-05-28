@@ -10,27 +10,36 @@ html {
 }
 
 nav {
-    padding: 1rem;
+    /* padding: 1rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+
+    margin-left: 1em;
+}
+
+nav ul > * {
+    margin: 5px 0px;
 }
 
 nav ul {
-    width: 25%;
+    /* width: 25%;
 
     list-style-type: none;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; */
+
+    list-style-type: none;
+    margin: 10px 0px;
 }
 
 nav ul a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
@@ -64,24 +73,19 @@ main {
     padding: 0.5rem 1rem;
 }
 
-main > div {
-    display: flex;
-    flex-direction: row;
-}
+
 
 main > div > img {
-    width: 30%;
-    margin-right: 4rem;
+    /* width: 30%;
+    margin-right: 4rem; */
 
     border: 3px solid black;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
-}
 
-.biography {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4rem;
+    width: 40%;
+    height: 40%;
+    margin: auto;
 }
 
 .biography > * {
@@ -94,7 +98,8 @@ main > div > img {
 
 .biography > p {
     font-size: 1.25em;
-    text-align: justify;
+    /* text-align: justify; */
+    margin: 20px 0px;
 }
 
 .biography a {
@@ -111,12 +116,6 @@ main > div > img {
     margin-bottom: 0.5em;
 }
 
-#projects > .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3em;
-}
-
 .project-card {
     display: flex;
     flex-direction: row;
@@ -127,6 +126,8 @@ main > div > img {
     background-color: #F5F5F5;
     /* width: 100%; */
     box-shadow: 0.1em 0.1em;
+
+    margin: 10px 0px;
 }
 
 .project-card > div h3 {
@@ -139,7 +140,7 @@ main > div > img {
     flex-direction: column;
     justify-content: space-between;
     /* width: 70%; */
-    width: 60%;
+    /* width: 60%; */
 }
 
 .project-card > div p {
@@ -147,26 +148,29 @@ main > div > img {
 }
 
 .project-card > img {
-    width: 30%;
-    margin-right: 0.4em;
+    /* width: 30%;
+    margin-right: 0.4em; */
+
+    display: none;
 }
 
 #contact {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     /* justify-content: space-between; */
     align-items: center;
 }
 
 #contact > div {
-    margin-left: 10em;
+    /* margin-left: 10em; */
     margin-top: 10px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10em;
+    gap: 10em; */
 }
 
 #contact button {
+    margin: 10px 0px;
     width: 10em;
     height: 3em;
     display: flex;
@@ -197,4 +201,82 @@ main > div > img {
 .explore:hover {
     background-color: #c2c1c1;
     cursor: pointer;
+}
+
+/* 
+Breakpoints
+    576 px
+    768 px
+    992 px
+*/
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* NOTHING TO DO */
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        padding: 1rem;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        /* width: 25%; */
+    
+        list-style-type: none;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav ul a {
+        margin: 5px 10px;
+    }
+
+    .project-card > img {
+        width: 30%;
+        margin-right: 0.4em;
+    
+        display: inline;
+    }
+
+    #contact > div {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    main > div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > div > img {
+        width: 30%;
+        margin-right: 4rem;
+    }
+
+    .biography {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+    }
+
+    .biography > p {
+        text-align: justify;
+    }
+
+    #projects > .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+    }
 }
