@@ -10,13 +10,6 @@ html {
 }
 
 nav {
-    /* padding: 1rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
-
     margin-left: 1em;
 }
 
@@ -25,15 +18,6 @@ nav ul > * {
 }
 
 nav ul {
-    /* width: 25%;
-
-    list-style-type: none;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; */
-
     list-style-type: none;
     margin: 10px 0px;
 }
@@ -76,9 +60,6 @@ main {
 
 
 main > div > img {
-    /* width: 30%;
-    margin-right: 4rem; */
-
     border: 3px solid black;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
@@ -96,9 +77,11 @@ main > div > img {
     font-size: 1.7em;
 }
 
-.biography > p {
+p {
     font-size: 1.25em;
-    /* text-align: justify; */
+}
+
+.biography > p {
     margin: 20px 0px;
 }
 
@@ -124,7 +107,6 @@ main > div > img {
     border-radius: 0.4em;
     padding: 2em;
     background-color: #F5F5F5;
-    /* width: 100%; */
     box-shadow: 0.1em 0.1em;
 
     margin: 10px 0px;
@@ -139,8 +121,6 @@ main > div > img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* width: 70%; */
-    /* width: 60%; */
 }
 
 .project-card > div p {
@@ -148,25 +128,35 @@ main > div > img {
 }
 
 .project-card > img {
-    /* width: 30%;
-    margin-right: 0.4em; */
-
     display: none;
 }
 
+#certifications .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5em;
+
+    margin: 1em 0px;
+}
+
+.certification-card {
+    border: solid 1px black;
+    box-shadow: 0.2em 0.2em;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.certification-card img {
+    width: 100%;
+    height: 100%;
+}
+
 #contact {
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: space-between; */
     align-items: center;
 }
 
 #contact > div {
-    /* margin-left: 10em; */
     margin-top: 10px;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10em; */
 }
 
 #contact button {
@@ -186,7 +176,6 @@ main > div > img {
 .exploreWrapper {
     margin-top: 1rem;
     display: flex;
-    /* justify-content: center; */
 }
 
 .explore {
@@ -210,8 +199,24 @@ Breakpoints
     992 px
 */
 
+@media screen and (max-width: 576px) {
+    #certifications .wrapper {
+        display: block;
+    }
+
+    .certification-card {
+        margin: 1em 0;
+    }
+}
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    /* NOTHING TO DO */
+    #certifications .wrapper {
+        display: block;
+    }
+
+    .certification-card {
+        margin: 1em 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
