@@ -44,60 +44,82 @@
 
         <section id="projects">
             <h2 class="section-title">My Projects</h2>
-            <div class="wrapper">
-                <div class="project-card">
-                    <div>
+            <div>
+                <div class="wrapper">
+                    <div class="project-card">
                         <div>
-                            <h3>FitTrack</h3>
-                            <p>FitTrack is a web application that tracks an user's weight. The app is developed with the framework React and is connected to an API that provides authentication and users information.</p>
+                            <div>
+                                <h3>FitTrack</h3>
+                                <p>FitTrack is a web application that tracks an user's weight. The app is developed with the framework React and is connected to an API that provides authentication and users information.</p>
+                            </div>
+                            <div class="exploreWrapper">
+                                <button onclick="location.href='https://github.com/MHaurel/tii-2023'" class="explore">
+                                    Explore
+                                </button>
+                            </div>
                         </div>
-                        <div class="exploreWrapper">
-                            <button onclick="location.href='https://github.com/MHaurel/tii-2023'" class="explore">
-                                Explore
-                            </button>
-                        </div>
+                        <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
                     </div>
-                    <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
+
+                    <div class="project-card">
+                        <div>
+                            <h3>Neural network concept interpreter</h3>
+                            <p>During an internship in LORIA Nancy, France I built a software able to explore the layers of a neural network to find underlying concepts linked to existing knowledge. This project is developed in Python and is fully open-source.</p>
+                            <div class="exploreWrapper">
+                                <button onclick="location.href='https://github.com/MHaurel/nn-concept-interpreter'" class="explore">
+                                    Explore
+                                </button>
+                            </div>
+                        </div>
+                        <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
+                    </div>
+
+                    <div class="project-card">
+                        <div>
+                            <h3>Teaching an AI to survive</h3>
+                            <p>With Unity and Reinforcement Learning, I teached an AI to survive in a small environment. The task was to pick up wood to put in the campfire while avoiding to fall in the void. This project is not available on GitHub but maybe will soon...</p>
+                            <div class="exploreWrapper">
+                                <button onclick="alert('This repository is not published yet')" class="explore">
+                                    Explore
+                                </button>
+                            </div>
+                        </div>
+                        <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
+                    </div>
+
+                    <div class="project-card">
+                        <div>
+                            <h3>Human pose 2 robot</h3>
+                            <p>I developed a program which reads the pose of a human and tells the robot to mimic it. Works with the robot Pepper and Nao and even with the simulator embedded in the software Choregraph.</p>
+                            <div class="exploreWrapper">
+                                <button onclick="location.href='https://github.com/MHaurel/pose_control_robot'" class="explore">
+                                    Explore
+                                </button>
+                            </div>
+                        </div>
+                        <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <div>
-                        <h3>Neural network concept interpreter</h3>
-                        <p>During an internship in LORIA Nancy, France I built a software able to explore the layers of a neural network to find underlying concepts linked to existing knowledge. This project is developed in Python and is fully open-source.</p>
-                        <div class="exploreWrapper">
-                            <button onclick="location.href='https://github.com/MHaurel/nn-concept-interpreter'" class="explore">
-                                Explore
-                            </button>
-                        </div>
-                    </div>
-                    <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
+                <p>Thanks to the Gymnasium library, I learned about Reinforcement Learning to produce intelligent agents.</p>
+                <div class="video-wrapper">
+                    <video class="video" controls width="500">                
+                        <source src="./resources/video/ant-a2c.mp4" type="video/mp4">
+                    
+                        Download the
+                        <a href="./resources/video//ant-a2c.mp4">MP4</a>
+                        video.
+                    </video>
+
+                    <video class="video" controls width="500">                
+                        <source src="./resources/video/lunar-lander.mp4" type="video/mp4">
+                    
+                        Download the
+                        <a href="./resources/video/lunar-lander.mp4">MP4</a>
+                        video.
+                    </video>
                 </div>
 
-                <div class="project-card">
-                    <div>
-                        <h3>Teaching an AI to survive</h3>
-                        <p>With Unity and Reinforcement Learning, I teached an AI to survive in a small environment. The task was to pick up wood to put in the campfire while avoiding to fall in the void. This project is not available on GitHub but maybe will soon...</p>
-                        <div class="exploreWrapper">
-                            <button onclick="alert('This repository is not published yet')" class="explore">
-                                Explore
-                            </button>
-                        </div>
-                    </div>
-                    <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
-                </div>
-
-                <div class="project-card">
-                    <div>
-                        <h3>Human pose 2 robot</h3>
-                        <p>I developed a program which reads the pose of a human and tells the robot to mimic it. Works with the robot Pepper and Nao and even with the simulator embedded in the software Choregraph.</p>
-                        <div class="exploreWrapper">
-                            <button onclick="location.href='https://github.com/MHaurel/pose_control_robot'" class="explore">
-                                Explore
-                            </button>
-                        </div>
-                    </div>
-                    <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
-                </div>
             </div>
         </section>
 

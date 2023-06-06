@@ -93,6 +93,13 @@ p {
     margin-top: 1em;
 }
 
+
+
+#projects .video {
+    border: solid 1px black;
+    box-shadow: 0.2em 0.2em;
+}
+
 .section-title {
     font-size: 3em;
     margin-top: 1em;
@@ -279,7 +286,22 @@ Breakpoints
         text-align: justify;
     }
 
-    #projects > .wrapper {
+    #projects .video-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    #projects .video-wrapper > * {
+        margin: 0px 1em;
+    }
+
+    #projects > div > p {
+        margin: 1.5em 0;
+    }
+
+    #projects .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3em;
