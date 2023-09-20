@@ -1,0 +1,110 @@
+/* Custom Jupyter Notebook Theme */
+
+/* Set Roboto font */
+body, button, input, select, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Change background color */
+body {
+    background-color: #f0f6e8; /* Light greenish background */
+}
+
+/* Change text color */
+body, .rendered_html, .rendered_html pre, .rendered_html code, .rendered_html tt, .rendered_html var, .rendered_html kbd, .rendered_html samp {
+    color: #333; /* Dark gray text */
+}
+
+/* Change code cell input and output colors */
+div.output_area pre {
+    background-color: #e1f0dc; /* Light greenish code cell background */
+}
+
+/* Change code cell input prompt */
+div.input_prompt {
+    color: #155724; /* Dark green input prompt */
+}
+
+/* Change code cell output prompt */
+div.output_prompt {
+    color: #155724; /* Dark green output prompt */
+}
+
+/* Change code cell output text */
+div.output_area {
+    color: #333; /* Dark gray output text */
+}
+
+/* Change code cell output error messages */
+div.output_area .output_error {
+    color: #721c24; /* Dark red error messages */
+}
+
+/* Change code cell selected background color */
+.cell.selected {
+    background-color: #d4edd1; /* Light greenish selected cell background */
+}
+
+/* Change code cell scrollbar color */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #155724; /* Dark green scrollbar thumb */
+    border-radius: 10px;
+}
+
+/* Change code cell scrollbar hover color */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0d3a1a; /* Darker greenish scrollbar thumb on hover */
+}
+
+/* Change code cell scrollbar track color */
+::-webkit-scrollbar-track {
+    background-color: #f0f6e8; /* Light greenish scrollbar track */
+}
+
+/* Change header colors */
+div#header {
+    background-color: #155724; /* Dark green header background */
+}
+
+div#menubar-container, div#menubar, div#kernel_logo {
+    background-color: #155724; /* Dark green menubar background */
+}
+
+div#notebook_name {
+    color: #f0f6e8; /* Light greenish notebook name */
+}
+
+/* Change cell toolbar colors */
+div#maintoolbar, div#maintoolbar-container {
+    background-color: #155724; /* Dark green toolbar background */
+}
+
+div#maintoolbar-container .btn-group.pull-right {
+    background-color: #155724; /* Dark green button group background */
+}
+
+div#notebook-container, div#notebook {
+    border-top: 1px solid #155724; /* Dark green notebook border */
+}
+
+/* Change link colors */
+a {
+    color: #0d3a1a; /* Darker greenish links */
+}
+
+a:hover {
+    color: #155724; /* Dark green links on hover */
+}
+
+/* Change link underline behavior */
+a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
