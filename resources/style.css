@@ -1,8 +1,27 @@
-/* Custom Jupyter Notebook Theme */
+<style>
+
+:root{
+    --header1_color: #155724;
+    --header2_color: #42841F;
+    --header3_color: #6EAF4B;
+    --keyword_color: #cc241d; /* import */
+    --string_color: #79740e;
+    --number_color: #b16286;
+    --def_color: #689d6a; /* class name */
+    --property_color: #458588; /* python properties */
+    --builtin_color: #689d6a;
+    --comment_color: #9f9f9f;
+    --comment_color_2: #458588; /* equals sign */
+    --operator_color: #a221f2;
+    --font_color: #3c3836; /* general font */
+    --variable2_color: #b16286; /* self keyword */
+    --box_color: #fffdee66;
+    --font_family: 'Roboto', sans-serif; /* Roboto font */
+}
 
 /* Set Roboto font */
 body, button, input, select, textarea {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font_family);
 }
 
 /* Change background color */
@@ -12,27 +31,27 @@ body {
 
 /* Change text color */
 body, .rendered_html, .rendered_html pre, .rendered_html code, .rendered_html tt, .rendered_html var, .rendered_html kbd, .rendered_html samp {
-    color: #333; /* Dark gray text */
+    color: var(--font_color); /* Dark gray text */
 }
 
 /* Change code cell input and output colors */
 div.output_area pre {
-    background-color: #e1f0dc; /* Light greenish code cell background */
+    background-color: var(--box_color); /* Light greenish code cell background */
 }
 
 /* Change code cell input prompt */
 div.input_prompt {
-    color: #155724; /* Dark green input prompt */
+    color: var(--header1_color); /* Dark green input prompt */
 }
 
 /* Change code cell output prompt */
 div.output_prompt {
-    color: #155724; /* Dark green output prompt */
+    color: var(--header1_color); /* Dark green output prompt */
 }
 
 /* Change code cell output text */
 div.output_area {
-    color: #333; /* Dark gray output text */
+    color: var(--font_color); /* Dark gray output text */
 }
 
 /* Change code cell output error messages */
@@ -51,7 +70,7 @@ div.output_area .output_error {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #155724; /* Dark green scrollbar thumb */
+    background-color: var(--header1_color); /* Dark green scrollbar thumb */
     border-radius: 10px;
 }
 
@@ -67,11 +86,11 @@ div.output_area .output_error {
 
 /* Change header colors */
 div#header {
-    background-color: #155724; /* Dark green header background */
+    background-color: var(--header1_color); /* Dark green header background */
 }
 
 div#menubar-container, div#menubar, div#kernel_logo {
-    background-color: #155724; /* Dark green menubar background */
+    background-color: var(--header1_color); /* Dark green menubar background */
 }
 
 div#notebook_name {
@@ -80,15 +99,15 @@ div#notebook_name {
 
 /* Change cell toolbar colors */
 div#maintoolbar, div#maintoolbar-container {
-    background-color: #155724; /* Dark green toolbar background */
+    background-color: var(--header1_color); /* Dark green toolbar background */
 }
 
 div#maintoolbar-container .btn-group.pull-right {
-    background-color: #155724; /* Dark green button group background */
+    background-color: var(--header1_color); /* Dark green button group background */
 }
 
 div#notebook-container, div#notebook {
-    border-top: 1px solid #155724; /* Dark green notebook border */
+    border-top: 1px solid var(--header1_color); /* Dark green notebook border */
 }
 
 /* Change link colors */
@@ -97,7 +116,7 @@ a {
 }
 
 a:hover {
-    color: #155724; /* Dark green links on hover */
+    color: var(--header1_color); /* Dark green links on hover */
 }
 
 /* Change link underline behavior */
@@ -108,3 +127,12 @@ a {
 a:hover {
     text-decoration: underline; /* Underline links on hover */
 }
+
+/* Custom code cell styling */
+.cm-s-jupyter span.cm-variable-2{
+    color: var(--variable2_color);
+}
+
+/* Add more custom styling for different code elements as needed */
+
+</style>
