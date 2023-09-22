@@ -22,12 +22,12 @@ nav ul {
     margin: 10px 0px;
 }
 
-nav ul a {
+a {
     text-decoration: underline;
     color: black;
 }
 
-nav ul a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -302,4 +302,24 @@ Breakpoints
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3em;
     }
+}
+
+h1.notebooks {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.notebooks-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.notebooks-list > div {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+.dl {
+    margin-left: 3rem;
 }
