@@ -57,8 +57,6 @@ main {
     padding: 0.5rem 1rem;
 }
 
-
-
 main > div > img {
     border: 3px solid black;
     border-radius: 0.4em;
@@ -92,8 +90,6 @@ p {
 #projects {
     margin-top: 1em;
 }
-
-
 
 #projects .video {
     border: solid 1px black;
@@ -272,7 +268,7 @@ Breakpoints
     }
 
     main > div > img {
-        width: 30%;
+        width: 60%;
         margin-right: 4rem;
     }
 
