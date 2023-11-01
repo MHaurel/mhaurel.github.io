@@ -78,14 +78,14 @@
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
-                    href="#"
-                    class="bg-gray-700 text-white rounded-md px-3 py-2 text-sm font-medium"
+                    href="index.html"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                     aria-current="page"
                     >Home</a
                   >
                   <a
-                    href="research.html"
-                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    href="#"
+                    class="bg-gray-700 text-white rounded-md px-3 py-2 text-sm font-medium"
                     >Research</a
                   >
                   <a
@@ -109,14 +109,14 @@
           <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
-              href="#"
-              class="bg-gray-700 text-white block rounded-md px-3 py-2 text-base font-medium"
+              href="index.html"
+              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               aria-current="page"
               >Home</a
             >
             <a
-              href="research.html"
-              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              href="#"
+              class="bg-gray-700 text-white block rounded-md px-3 py-2 text-base font-medium"
               >Research</a
             >
             <a
@@ -135,84 +135,31 @@
     </header>
 
     <main class="py-8 px-4">
-      <div
-        class="flex flex-col md:flex md:flex-row justify-center items-center space-y-4 md:space-x-32"
-      >
-        <div
-          class="md:w-fit space-y-4 flex flex-col justify-center items-center md:p-16"
-        >
-          <img
-            class="rounded-full w-64 h-64 md:h-48 md:w-48"
-            src="./resources/img/profile.jpg"
-            alt="Profile"
-          />
-          <h1 class="text-2xl font-bold">Maxime Haurel</h1>
-          <div class="flex flex-row space-x-4">
-            <a
-              class="underline"
-              target="_blank"
-              href="https://github.com/MHaurel"
-              >GitHub</a
-            >
-            <a
-              class="underline"
-              target="_blank"
-              href="https://www.linkedin.com/in/maxime-haurel-326133182/"
-              >LinkedIn</a
-            >
-            <a
-              class="underline"
-              target="_blank"
-              href="https://twitter.com/mhaurel_"
-              >Twitter</a
-            >
-          </div>
-          <a class="underline" href="mailto:maxime.haurel0@gmail.com"
-            >Send me a mail</a
-          >
-        </div>
+      <div class="flex flex-col space-y-4">
+        <h2 class="text-xl font-bold">Research</h2>
 
-        <div class="space-y-4 md:w-3/6">
-          <h2 class="text-l md:text-xl font-bold">About Me</h2>
+        <p>
+          Since I discovered the academic world, I've always wanted to pursue a
+          career in research. I've worked as an intern in the laboratory LORIA
+          in Nancy, France and made contributions to the research team I was
+          involved in.
+        </p>
 
-          <!-- Quick description -->
-          <div class="space-y-2 text-justify">
-            <p>
-              I am Maxime Haurel, a 22 years old student passionated by AI and
-              research. I am currently pursuing a 2nd year of a master's degree
-              in Cognitive Sciences with a specialization in Artificial
-              Intelligence in Nancy, France.
+        <ul class="flex flex-col space-x-6">
+          <li>
+            <a
+              href="https://github.com/MHaurel/nn-concept-interpreter"
+              target="_blank"
+              class="underline"
+              >Neural Network Concept Interpreter</a
+            >
+            <p class="text-gray-500">
+              This project is the result of my internship at LORIA. It is a
+              software made in Python and tries to unveil whether the network
+              has been able to use concepts to predict the output.
             </p>
-            <!-- Research -->
-            <p>
-              For as long as I can remember, I have been passionated by
-              discovering things and techniques. This is why I aim to get
-              enrolled in a thesis from September 2024 or later.
-            </p>
-            <p>
-              During the summer 2022, I did an internship in the laboratory
-              LORIA in Nancy, France during which I developed techniques to
-              explain the reasoning of a neural network through an aligment of
-              knowledge bases. This internship was under the supervision of
-              Mathieu d'Aquin.
-            </p>
-            <!-- Skills -->
-            <p>
-              One of my hobby is to constantly learn new things and techniques,
-              mostly in AI. I enjoy building projects, constructing models, or
-              reviewing the current literature. Hence, I developed true skills
-              in Algorithmics, Reinforcement Learning and Machine Learning in a
-              more general fashion.
-            </p>
-
-            <!-- Global -->
-            <p>
-              I am looking for a PhD. position in an university or a company
-              from September 2024. I am not restricted to any country and I am
-              open to every opportunity so feel free to get in touch with me !
-            </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </main>
   </body>
