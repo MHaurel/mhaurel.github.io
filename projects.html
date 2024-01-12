@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./icon.ico" />
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Maxime Haurel</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="bg-[#F7F7F7] shadow-[0_3px_60px_-15px_rgba(0,0,0,0.3)]">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-[#F7F7F7] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                      Icon when menu is closed.
+          
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+                      Icon when menu is open.
+          
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="index.html"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >Home</a
+                  >
+                  <a
+                    href="research.html"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Research</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-gray-700 text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Notebooks & Projects</a
+                  >
+                  <a
+                    href="./resources/CV.pdf"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >CV</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="index.html"
+              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="research.html"
+              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Research</a
+            >
+            <a
+              href="#"
+              class="bg-gray-700 text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Notebooks & Projects</a
+            >
+            <a
+              href="./resources/CV.pdf"
+              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >CV</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-8 px-4">
+      <div class="flex flex-col space-y-4">
+        <h2 class="text-xl font-bold">Notebooks & Projects</h2>
+
+        <p>
+          Here are the notebooks and the projects I made on my spare time. This
+          collection is the representation of my work to improve my skills in
+          AI.
+        </p>
+
+        <h3 class="text-l font-bold">Notebooks</h3>
+
+        <ul class="flex flex-col space-y-6">
+          <li class="flex flex-col space-y-2">
+            <a
+              href="./notebooks/image_compression_autoencoder.html"
+              target="_blank"
+              class="underline"
+              >Image Compression with an AutoEncoder</a
+            >
+            <a
+              class="ml-6 hover:underline"
+              href="./notebooks/image_compression_autoencoder.ipynb"
+              download
+              >Download it</a
+            >
+          </li>
+
+          <li class="flex flex-col space-y-2">
+            <a
+              href="./notebooks/genetic_function_optimization.html"
+              target="_blank"
+              class="underline"
+              >Function optimization with genetic algorithm</a
+            >
+            <a
+              class="ml-6 hover:underline"
+              href="./notebooks/genetic_function_optimization.ipynb"
+              download
+              >Download it</a
+            >
+          </li>
+
+          <!-- <li class="flex flex-col space-y-2">
+            <a
+              href="./notebooks/image_compression_autoencoder.html"
+              target="_blank"
+              class="underline"
+              >Image Compression with an AutoEncoder</a
+            >
+            <a
+              class="ml-6 hover:underline"
+              href="./notebooks/image_compression_autoencoder.ipynb"
+              download
+              >Download it</a
+            >
+          </li> -->
+        </ul>
+
+        <h3 class="text-l font-bold">Projects</h3>
+
+        <ul class="flex flex-col space-y-6">
+          <li class="flex flex-col space-y-2">
+            <a
+              href="https://github.com/MHaurel/nn-concept-interpreter"
+              target="_blank"
+              class="underline"
+              >Neural Network Concept Interpreter</a
+            >
+            <p class="text-gray-500">
+              This software has the purpose of aligning concepts to a neural
+              network layers' activations. It is developed in Python and is
+              completely open source. It has been realized during my internship
+              at LORIA.
+            </p>
+          </li>
+
+          <li class="flex flex-col space-y-2">
+            <a
+              href="https://github.com/MHaurel/pose_control_robot"
+              target="_blank"
+              class="underline"
+              >Human Pose to Robot</a
+            >
+            <p class="text-gray-500">
+              This project derives from a robotics class. It transcribes the
+              arms pose of a human (read by a camera) to an actual pose of a
+              robot such as Nao or Pepper.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+
+  <script src="index.js"></script>
+</html>

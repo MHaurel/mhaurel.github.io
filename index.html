@@ -1,193 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./icon.ico" />
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Maxime Haurel</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <h2>MAXIME HAUREL</h2>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a target="_blank" href="./resources/CV.pdf">Curriculum Vitae</a></li>
-                <li><a href="./notebook_list.html">Check my notebooks</a></li>
-                <li><button class="cta-retro" onclick="location.href='#contact'">Find Me!</button></li>
-            </ul>
-        </nav>
-    </header>
+  </head>
 
-    <main>
-        <div>
-            <img src="./resources/img/profile.jpg" alt="Profile">
-            <div class="biography">
-                <h2>About Me</h2>
-                <!-- Quick description -->
-                <p>I am a 22 years old french cognitive sciences student and AI developer. For the past 3 years, I've been studying cognitive sciences at IDMC in Université de Lorraine in Nancy, France.</p>
-                <!-- Past experience -->
-                <p>I worked for 1 year as an Artificial Intelligence developer alongside my studies. During this year, I focused on developing a Machine Learning model that can automatically process motion capture data.</p>
-                <!-- What am I doing currently -->
-                <p>I am still enrolled in an apprenticeship program as part of my Cognitive Sciences MSc. I work as an Developer at Datanello where I am focused in developing web applications as well as intelligent solutions.</p>
-                <!-- Appetance for reasearch -->
-                <p>Since I was a child, I feel deeply passionated about sciences. By reading academic research and by doing an internship in the LORIA laboratory, my willigness to do research has increased a lot. That is why my aim is to get enrolled as a PhD candidate in Artificial Intelligence.</p>
-                <!-- Projects -->
-                <p>Alongside my studies and my job, I create projects that involve a wide range of my skills to practice. These projects are open source, available on my GitHub and you can have a preview at these in the <a href="#projects">Projects</a> section below.</p>
-                <!-- Skills -->
-                <p>By reading and doing projects, I've acquired many skills in <strong>Machine Learning</strong>, <strong>Reinforcement Learning</strong> but also in <strong>Python</strong> and <strong>React</strong>.</p>
-                <!-- Kaggle, GitHub -->
-                <p>I am available to all propositions concerning projects or work. I am active on <a href="https://kaggle.com/hetax17" target="_blank">Kaggle<a> and <a href="https://www.linkedin.com/in/maxime-haurel-326133182/" target="_blank">LinkedIn</a> and my projects can be found on my <a href="https://github.com/MHaurel" target="_blank">GitHub</a> profile.</p>
+  <body>
+    <header>
+      <nav class="bg-[#F7F7F7] shadow-[0_3px_60px_-15px_rgba(0,0,0,0.3)]">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-[#F7F7F7] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                      Icon when menu is closed.
+          
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+                      Icon when menu is open.
+          
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
             </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="#"
+                    class="bg-gray-700 text-white rounded-md px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >Home</a
+                  >
+                  <a
+                    href="research.html"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Research</a
+                  >
+                  <a
+                    href="projects.html"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Notebooks & Projects</a
+                  >
+                  <a
+                    href="./resources/CV.pdf"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >CV</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <section id="projects">
-            <h2 class="section-title">My Projects</h2>
-            <div>
-                <div class="wrapper">
-                    <div class="project-card">
-                        <div>
-                            <div>
-                                <h3>FitTrack</h3>
-                                <p>FitTrack is a web application that tracks an user's weight. The app is developed with the framework React and is connected to an API that provides authentication and users information.</p>
-                            </div>
-                            <div class="exploreWrapper">
-                                <button onclick="location.href='https://github.com/MHaurel/tii-2023'" class="explore">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
-                        <img src="./resources/img/Projects/fittrack.jpg" alt="The project in question"/>
-                    </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="#"
+              class="bg-gray-700 text-white block rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="research.html"
+              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Research</a
+            >
+            <a
+              href="projects.html"
+              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Notebooks & Projects</a
+            >
+            <a
+              href="./resources/CV.pdf"
+              class="text-gray-500 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >CV</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
 
-                    <div class="project-card">
-                        <div>
-                            <h3>Neural network concept interpreter</h3>
-                            <p>During an internship in LORIA Nancy, France I built a software able to explore the layers of a neural network to find underlying concepts linked to existing knowledge. This project is developed in Python and is fully open-source.</p>
-                            <div class="exploreWrapper">
-                                <button onclick="location.href='https://github.com/MHaurel/nn-concept-interpreter'" class="explore">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
-                        <img src="./resources/img/Projects/nn_concept_interpreter.jpg" alt="The project in question"/>
-                    </div>
+    <main class="py-8 px-4">
+      <div
+        class="flex flex-col md:flex md:flex-row justify-center items-center space-y-4 md:space-x-32"
+      >
+        <div
+          class="md:w-fit space-y-4 flex flex-col justify-center items-center md:p-16"
+        >
+          <img
+            class="rounded-full w-64 h-64 md:h-48 md:w-48"
+            src="./resources/img/profile.jpg"
+            alt="Profile"
+          />
+          <h1 class="text-2xl font-bold">Maxime Haurel</h1>
+          <div class="flex flex-row space-x-4">
+            <a
+              class="underline"
+              target="_blank"
+              href="https://github.com/MHaurel"
+              >GitHub</a
+            >
+            <a
+              class="underline"
+              target="_blank"
+              href="https://www.linkedin.com/in/maxime-haurel-326133182/"
+              >LinkedIn</a
+            >
+            <a
+              class="underline"
+              target="_blank"
+              href="https://twitter.com/mhaurel_"
+              >Twitter</a
+            >
+          </div>
+          <a class="underline" href="mailto:maxime.haurel0@gmail.com"
+            >Send me a mail</a
+          >
+        </div>
 
-                    <div class="project-card">
-                        <div>
-                            <h3>Preventing Forest Fires</h3>
-                            <p>With the PyTorch library, I developed a model that is able to predict whether there will be a fire from satellite photos. The model can be queried from an interface in React.</p>
-                            <div class="exploreWrapper">
-                                <button onclick="location.href='https://github.com/MHaurel/prevent_forest_fires'" class="explore">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
-                        <img src="./resources/img/Projects/prevent_forest_fires.jpg" alt="The project in question"/>
-                    </div>
+        <div class="space-y-4 md:w-3/6">
+          <h2 class="text-l md:text-xl font-bold">About Me</h2>
 
-                    <div class="project-card">
-                        <div>
-                            <h3>Teaching an AI to survive</h3>
-                            <p>With Unity and Reinforcement Learning, I teached an AI to survive in a small environment. The task was to pick up wood to put in the campfire while avoiding to fall in the void. This project is not available on GitHub but maybe will soon...</p>
-                            <div class="exploreWrapper">
-                                <button onclick="alert('This repository is not published yet')" class="explore">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
-                        <img src="./resources/img/project-sample.jpg" alt="The project in question"/>
-                    </div>
+          <!-- Quick description -->
+          <div class="space-y-2 text-justify">
+            <p>
+              I am Maxime Haurel, a 22 years old student passionated by AI and
+              research. I am currently pursuing a 2nd year of a master's degree
+              in Cognitive Sciences with a specialization in Artificial
+              Intelligence in Nancy, France.
+            </p>
+            <!-- Research -->
+            <p>
+              For as long as I can remember, I have been passionated by
+              discovering things and techniques. This is why I aim to get
+              enrolled in a thesis from September 2024 or later.
+            </p>
+            <p>
+              During the summer 2022, I did an internship in the laboratory
+              LORIA in Nancy, France during which I developed techniques to
+              explain the reasoning of a neural network through an aligment of
+              concepts. This internship was under the supervision of Mathieu
+              d'Aquin.
+            </p>
+            <!-- Skills -->
+            <p>
+              One of my hobby is to constantly learn new things and techniques,
+              mostly in AI. I enjoy building projects, constructing models, or
+              reviewing the current literature. Hence, I developed true skills
+              in Algorithmics, Reinforcement Learning and Machine Learning in a
+              more general fashion.
+            </p>
+            <p>Moreover, I am already experienced in developing AI and web solutions from my prior experiences in apprenticeships I reliazed and am current doing.</p>
 
-                    <div class="project-card">
-                        <div>
-                            <h3>Human pose 2 robot</h3>
-                            <p>I developed a program which reads the pose of a human and tells the robot to mimic it. Works with the robot Pepper and Nao and even with the simulator embedded in the software Choregraph.</p>
-                            <div class="exploreWrapper">
-                                <button onclick="location.href='https://github.com/MHaurel/pose_control_robot'" class="explore">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
-                        <img src="./resources/img/Projects/pose_2_robot.jpg" alt="The project in question"/>
-                    </div>
-                </div>
+            <!-- Global -->
+            <p>
+              I am looking for a PhD. position in Artificial Intelligence in an university or a company
+              from September 2024. I am not restricted to any country and I am
+              open to every opportunity so feel free to get in touch with me !
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 
-                <p>Thanks to the Gymnasium library, I learned about Reinforcement Learning to produce intelligent agents.</p>
-                <div class="video-wrapper">
-                    <video class="video" controls width="500">                
-                        <source src="./resources/video/ant-a2c.mp4" type="video/mp4">
-                    
-                        Download the
-                        <a href="./resources/video//ant-a2c.mp4">MP4</a>
-                        video.
-                    </video>
-
-                    <video class="video" controls width="500">                
-                        <source src="./resources/video/parking.mp4" type="video/mp4">
-                    
-                        Download the
-                        <a href="./resources/video/parking.mp4">MP4</a>
-                        video.
-                    </video>
-
-                    <video class="video" controls width="500">                
-                        <source src="./resources/video/lunar-lander.mp4" type="video/mp4">
-                    
-                        Download the
-                        <a href="./resources/video/lunar-lander.mp4">MP4</a>
-                        video.
-                    </video>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h2 class="section-title">My Certifications</h2>
-            <p>Since I started to be interested in AI, I earned a lot of skills in various AI domains that the certifications I obtained can assess.</p>
-            <div class="wrapper">
-                <div class="certification-card">
-                    <img src="./resources/img/certifications/hf_rl.png" alt="HuggingFace Deep RL Certification"/>
-                </div>
-
-                <div class="certification-card">
-                    <img src="./resources/img/certifications/deep_learning.png" alt="Deep Learning Certification"/>
-                </div>
-
-                <div class="certification-card">
-                    <img src="./resources/img/certifications/certificate-ethics-of-ai.png" alt="Ethics of AI Certification"/>
-                </div>
-
-                <div class="certification-card">
-                    <img src="./resources/img/certifications/nlp.png" alt="Natural Language Processing Certification"/>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2 class="section-title">Find me</h2>
-            <div class=".wrapper">
-                <button class="cta-retro" onclick="location.href='https://kaggle.com/hetax17'">
-                    <p>Kaggle</p>
-                    <img src="./resources/img/kaggle.png" alt="Kaggle contact">
-                </button>
-
-                <button class="cta-retro" onclick="location.href='https://github.com/MHaurel'">
-                    <p>GitHub</p>
-                    <img src="./resources/img/github.png" alt="GitHub contact">
-                </button>
-
-                <button class="cta-retro" onclick="location.href='https://www.linkedin.com/in/maxime-haurel-326133182/'">
-                    <p>LinkedIn</p>
-                    <img src="./resources/img/linkedin.png" alt="LinkedIn contact">
-                </button>
-            </div>
-        </section>
-    </main> 
-</body>
+  <script src="index.js"></script>
 </html>
