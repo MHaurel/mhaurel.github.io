@@ -1,0 +1,11 @@
+{{define "main"}}
+<h1 class="text-3xl font-bold mb-4">Blog</h1>
+<ul>
+    {{ range .Pages }}
+    <li>
+        <a href="{{ .RelPermalink }}" class="text-blue-500">{{ .Title }}</a>
+        <span>({{ .Date.Format "Jan 2, 2006" }})</span>
+    </li>
+    {{end}}
+</ul>
+{{end}}
